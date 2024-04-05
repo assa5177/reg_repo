@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.regHeading {
+    display: flex;
+    justify-content: center;
+}
+body{
+        background:#FFFFFF ;
+        color: black;
+    }
+    form {
+        text-align: end;
+    padding-right: 658px;
+}
+.btn-success {
+        margin-right: 54px;
+    }
+    </style>
+</head>
+<body >
+    <h1 class="regHeading">Employee Registation Form</h1>
+    <form method="post" align="center">
+    {{form.as_p}}
+    {% csrf_token %}
+    <input type="submit" class="btn btn-success" name="" value="Register">
+    </form>
+</body>
+</html>
